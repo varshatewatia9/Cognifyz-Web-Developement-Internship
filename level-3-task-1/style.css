@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    background:#eef2f7;
+    color:#222;
+    text-align:center;
+
+}
+
+/* HEADER */
+
+header{
+
+    background:#0d47a1;
+    color:white;
+    padding:30px;
+
+}
+
+header h1{
+
+    font-size:40px;
+    margin-bottom:10px;
+
+}
+
+header p{
+
+    font-size:18px;
+
+}
+
+/* GALLERY */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    padding:40px;
+
+}
+
+.image-card{
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.image-card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.image-card img:hover{
+
+    transform:scale(1.1);
+
+}
+
+/* LIGHTBOX */
+
+#lightbox{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.9);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:1000;
+
+}
+
+#lightbox img{
+
+    max-width:85%;
+
+    max-height:85%;
+
+    border-radius:15px;
+
+}
+
+.close{
+
+    position:absolute;
+
+    top:20px;
+
+    right:35px;
+
+    font-size:45px;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+/* SLIDESHOW */
+
+.slideshow-section{
+
+    margin-top:50px;
+
+}
+
+.slideshow{
+
+    width:80%;
+
+    margin:30px auto;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.slide{
+
+    width:100%;
+
+    height:500px;
+
+    display:none;
+
+    object-fit:cover;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    margin-top:50px;
+
+    background:#0d47a1;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+header h1{
+
+font-size:28px;
+
+}
+
+header p{
+
+font-size:15px;
+
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+
+padding:20px;
+
+}
+
+.slide{
+
+height:250px;
+
+}
+
+.slideshow{
+
+width:95%;
+
+}
+
+}

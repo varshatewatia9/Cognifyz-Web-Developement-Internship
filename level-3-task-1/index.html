@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cyber Security Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Cyber Shield Gallery</h1>
+
+<p>Professional Image Gallery with Lightbox and Automatic Slideshow</p>
+
+</header>
+
+
+<!-- IMAGE GALLERY -->
+
+<section class="gallery">
+
+<div class="image-card">
+
+<img src="images/img1.jpg" onclick="openImage(this.src)">
+
+</div>
+
+<div class="image-card">
+
+<img src="images/img2.jpg" onclick="openImage(this.src)">
+
+</div>
+
+<div class="image-card">
+
+<img src="images/img3.jpg" onclick="openImage(this.src)">
+
+</div>
+
+<div class="image-card">
+
+<img src="images/img4.jpg" onclick="openImage(this.src)">
+
+</div>
+
+<div class="image-card">
+
+<img src="images/img5.jpg" onclick="openImage(this.src)">
+
+</div>
+
+<div class="image-card">
+
+<img src="images/img6.jpg" onclick="openImage(this.src)">
+
+</div>
+
+</section>
+
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox">
+
+<span class="close" onclick="closeImage()">&times;</span>
+
+<img id="lightbox-img">
+
+</div>
+
+
+
+<!-- SLIDESHOW -->
+
+<section class="slideshow-section">
+
+<h2>Automatic Slideshow</h2>
+
+<div class="slideshow">
+
+<img class="slide" src="images/img1.jpg">
+
+<img class="slide" src="images/img2.jpg">
+
+<img class="slide" src="images/img3.jpg">
+
+<img class="slide" src="images/img4.jpg">
+
+<img class="slide" src="images/img5.jpg">
+
+<img class="slide" src="images/img6.jpg">
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>Designed by Varsha Tewatia | Cognifyz Web Developement Internship</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
